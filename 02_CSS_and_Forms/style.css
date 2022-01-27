@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 300%;
+    color: green;
+}
+
+p {
+    font-size: 14pt;
+}
+
+li {
+    font-size: 20px;
+}
+
+/*
+ This is a note about my CSS file. This ignored by CSS.
+*/
+
+#welcome-message {
+    text-decoration: line-through;
+}
+
+.my-list-preferences {
+    color: cornflowerblue;
+}
+
+#my-box {
+    border: 1px solid black;
+    padding: 30px;
+    margin: 50px;
+    width: 200px;
+    box-sizing: border-box;
+}
