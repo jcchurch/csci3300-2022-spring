@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Input Forms Page</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <h1>Input Forms</h1>
+
+    <hr />
+
+    <form name="myform">
+      <div>
+        <label for="firstname">First name:</label>
+        <input type="text" name="firstname" id="firstname" />
+      </div>
+      <div>
+        <label for="lastname">Last name:</label>
+        <input type="text" name="lastname" id="lastname" />
+      </div>
+      <div>
+        What is your favorite color?
+
+        <ul>
+          <li>
+            <input type="radio" name="color" value="red" id="colorred" />
+            <label for="colorred">Red</label>
+          </li>
+          <li>
+            <input type="radio" name="color" value="green" id="colorgreen" />
+            <label for="colorgreen">Green</label>
+          </li>
+          <li>
+            <input type="radio" name="color" value="blue" id="colorblue" />
+            <label for="colorblue">Blue</label>
+          </li>
+        </ul>
+      </div>
+      <div>
+        What pets do you own?
+
+        <ul>
+          <li>
+            <input type="checkbox" name="pet" value="dog" id="petdog" />
+            <label for="petdog">Dog</label>
+          </li>
+          <li>
+            <input type="checkbox" name="pet" value="cat" id="petcat" />
+            <label for="petcat">Cat</label>
+          </li>
+          <li>
+            <input type="checkbox" name="pet" value="iguana" id="petiguana" />
+            <label for="petiguana">Iguana</label>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <input type="submit" value="Click me!" />
+      </div>
+    </form>
+  </body>
+</html>
