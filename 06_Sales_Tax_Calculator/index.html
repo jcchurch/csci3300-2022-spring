@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sales Tax Calculator</title>
+        <meta charset="utf-8">
+
+        <script>
+            function computeTaxes() {
+                const SALES_TAX_RATE = 0.095;
+
+                // Read in input.
+                let originalPrice = document.getElementById("itemprice").value;
+
+                // Do something with the input.
+                originalPrice = parseFloat(originalPrice);
+                let salesTax = originalPrice * SALES_TAX_RATE;
+                let totalPrice = originalPrice + salesTax;
+                
+                // Output what you did.
+                document.getElementById("originalprice").innerHTML = originalPrice;
+                document.getElementById("salestax").innerHTML = salesTax;
+                document.getElementById("totalprice").innerHTML = totalPrice;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Sales Tax Calculator</h1>
+        <hr>
+        <p>This program computes the sales tax of an item sold in Montgomery County, Tennessee.</p>
+        <hr>
+
+        <form name="taxes" action="javascript:computeTaxes()">
+            <div>
+                <label for="itemprice">Enter the price of an item:</label>
+                <input type="text" name="itemprice" id="itemprice">
+            </div>
+            <div>
+                <input type="submit" value="Calculate Taxes">
+            </div>
+        </form>
+
+        <hr>
+
+        <div>
+            Original Price: <span id="originalprice"></span>
+        </div>
+        <div>
+            Sales Tax: <span id="salestax"></span>
+        </div>
+        <div>
+            Total Price: <span id="totalprice"></span>
+        </div>
+    </body>
+</html>
