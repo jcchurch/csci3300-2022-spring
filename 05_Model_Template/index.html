@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Model Template</title>
+        <meta charset="utf-8">
+
+        <script>
+            function echoText() {
+                let echovalue = document.myform.echo.value;
+                document.getElementById("results").innerHTML = echovalue;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>My JavaScript Program</h1>
+        <hr>
+        <form name="myform" action="javascript:echoText()">
+            <label for="echofield">Echo This Text:</label>
+            <input type="text" name="echo" id="echofield">
+            <input type="submit">
+        </form>
+
+        <div id="results">(The echo text will go here.)</div>
+    </body>
+</html>
