@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Taco Button!</title>
+        <meta charset="utf-8">
+        <script>
+            function getTaco() {
+                document.getElementById("tacos").innerHTML = '<img src="images/taco.jpg" alt="three delicious tacos">';
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Taco Button!</h1>
+        <hr>
+        <form name="myform" action="javascript:getTaco()">
+            <input type="submit" value="Get the Tacos">
+        </form>
+        <hr>
+        <div id="tacos">(Tacos will go here.)</div>
+        
+    </body>
+</html>
