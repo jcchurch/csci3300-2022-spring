@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaScript Loops</title>
+    <meta charset="utf-8" />
+    <script>
+      /*
+            const HELLO = "hello";
+            const QUIT = "quit";
+            let option = HELLO;
+
+            while (option != QUIT) {
+                //option = prompt("Hello. Type 'quit' to quit.");
+
+                if (option == HELLO) {
+                    alert("Hi! Hello!");
+                }
+            }
+
+            alert("We are done.");
+            */
+
+      /*
+            let number = prompt("Enter a number less than 10.");
+            number = parseFloat(number);
+            while (isNaN(number) || number >= 10) {
+                alert("Invalid entry.");
+                number = prompt("Enter a number less than 10.");
+                number = parseFloat(number);
+            }
+            */
+
+            /*
+      let response = "";
+      do {
+        response = prompt("Does pineapple belong on pizza? [YN]");
+        response = response.toUpperCase();
+        if (response != "Y" && response != "N") {
+          alert("Invalid input. Expecting Y or N.");
+        }
+      } while (response != "Y" && response != "N");
+
+      if (response == "Y") {
+        alert(
+          "Your opinions are bad and you should feel bad. Pineapple does not belong on pizza."
+        );
+      } else {
+        alert("You may pick out the next pizza.");
+      }
+      */
+
+      let hidden = Math.floor((Math.random() *100) + 1);
+      let guess = 0;
+      let tries = 0;
+
+      do {
+          guess = parseFloat(prompt("Enter a guess."));
+          if (guess > hidden) { alert("Lower"); }
+          if (guess < hidden) { alert("Higher"); }
+          tries++;
+      } while (guess != hidden);
+
+      alert("You got it right in "+tries+"!");
+    </script>
+  </head>
+  <body>
+    <h1>JavaScript Loops</h1>
+    <hr />
+  </body>
+</html>
